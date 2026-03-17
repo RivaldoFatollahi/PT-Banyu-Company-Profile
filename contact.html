@@ -43,7 +43,7 @@
     <nav class="navbar" id="navbar">
       <div class="container nav-content">
         <!-- LEFT -->
-         <div class="hamburger" id="hamburger">
+        <div class="hamburger" id="hamburger">
           <span></span>
           <span></span>
           <span></span>
@@ -135,7 +135,7 @@
               <div class="info-icon"><img src="images/call.png" alt="" /></div>
               <div class="info-text">
                 <strong>Call Us</strong><br />
-                Phone : +62 855-5555-9984
+                +62 855-5555-9984
               </div>
             </div>
 
@@ -151,30 +151,30 @@
 
           <div class="contact-form">
             <h2>Send Us a Message</h2>
-            <form action="https://formspree.io/f/your-id" method="POST">
+            <form action="" id="whatsappForm" method="POST">
               <div class="form-row">
                 <div class="input-group">
                   <label>Name</label>
-                  <input type="text" name="name" required />
+                  <input type="text" name="name" id="name" required />
                 </div>
                 <div class="input-group">
                   <label>Address</label>
-                  <input type="text" name="address" />
+                  <input type="text" name="address" id="address" />
                 </div>
               </div>
               <div class="form-row">
                 <div class="input-group">
                   <label>Phone</label>
-                  <input type="tel" name="phone" />
+                  <input type="tel" name="phone" id="phone" />
                 </div>
                 <div class="input-group">
-                  <label>Phone</label>
-                  <input type="email" name="email" required />
+                  <label>Email</label>
+                  <input type="email" name="email" id="email" required />
                 </div>
               </div>
               <div class="input-group">
                 <label>Subject</label>
-                <select name="subject">
+                <select name="subject" id="subject">
                   <option value="" disabled selected hidden></option>
                   <option value="Distributor">Distributor</option>
                   <option value="Project">Project</option>
@@ -183,7 +183,12 @@
               </div>
               <div class="input-group">
                 <label>Message</label>
-                <textarea name="message" rows="4" required></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
               </div>
 
               <button type="submit" class="btn-send">Send</button>
@@ -253,6 +258,37 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document
+        .getElementById("whatsappForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Mencegah halaman reload
+
+          // Ambil data dari input
+          const name = document.getElementById("name").value;
+          const address = document.getElementById("address").value;
+          const subject = document.getElementById("subject").value;
+          const message = document.getElementById("message").value;
+
+          // Nomor WhatsApp tujuan (Ganti dengan nomor admin kamu, awali dengan 62)
+          const phoneNumber = "6287778273073";
+
+          // Susun format pesan
+          const text =
+            `Halo Admin Banyu Tani,%0A%0A` +
+            `Nama Saya ${name},%0A` +
+            `Alamat Saya ${address}.%0A` +
+            `Saya Adalah Seorang ${subject}%0A` +
+            `${message}`;
+
+          // Arahkan ke link WhatsApp
+          const url = `https://wa.me/${phoneNumber}?text=${text}`;
+
+          // Buka di tab baru
+          window.open(url, "_blank").focus();
+        });
+    </script>
 
     <script>
       const hamburger = document.getElementById("hamburger");
