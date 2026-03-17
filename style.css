@@ -386,7 +386,7 @@ body {
 
 .cards-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   max-width: 1050px;
   margin: auto;
@@ -417,7 +417,7 @@ body {
 }
 
 .card-item p {
-  font-size: 15px;
+  font-size: 13px;
   color: #3f3f3f;
   line-height: 1.5;
 }
