@@ -58,18 +58,18 @@
 
         <!-- CENTER -->
         <ul class="menu">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="index.html">BERANDA</a></li>
+          <li><a href="about.html">TENTANG KAMI</a></li>
           <li>
-            <a href="product.html"> PRODUCTS </a>
+            <a href="product.html"> PRODUK </a>
           </li>
           <li>
-            <a href="service.html">SERVICES </a>
+            <a href="service.html"> LAYANAN </a>
           </li>
           <li>
-            <a href="project.html">PROJECTS </a>
+            <a href="project.html"> PROYEK </a>
           </li>
-          <li><a href="#" class="active">CONTACT</a></li>
+          <li><a href="#" class="active"> KONTAK</a></li>
         </ul>
 
         <!-- RIGHT -->
@@ -83,7 +83,7 @@
           <img src="images/callB.png" class="profile-pic profile-dark" />
 
           <div class="profile-info">
-            <span class="profile-number">+62 877-7827-3073</span>
+            <span class="profile-number">+62 855-5555-9994</span>
             <span class="profile-role">Contact Admin</span>
           </div>
         </div>
@@ -97,10 +97,10 @@
       <div class="container hero-content reveal">
         <img src="images/LogoPT.png" class="hero-logo" alt="" />
         <div class="hero-text">
-          <h1>CONTACT US</h1>
+          <h1>HUBUNGI KAMI</h1>
           <p>
-            Here, you will explore our mission and vision, as well as learn how
-            we are establishing new benchmarks within the industry.
+            Punya pertanyaan atau ingin memulai proyek? Hubungi kami sekarang
+            dan tim kami siap memberikan solusi terbaik untuk Anda.
           </p>
         </div>
       </div>
@@ -111,14 +111,14 @@
         <div class="contact-card reveal">
           <div class="contact-info">
             <h2>Get In Touch</h2>
-            <p>Need a quote from us? Please fill in the fields below.</p>
+            <p>Punya pertanyaan atau ingin memulai proyek?</p>
 
             <div class="info-item">
               <div class="info-icon">
                 <img src="images/location.png" alt="" />
               </div>
               <div class="info-text">
-                <strong>Head Office</strong><br />
+                <strong>Kantor</strong><br />
                 Rawa Sawah I No 20 DKI Jakarta
               </div>
             </div>
@@ -126,7 +126,7 @@
             <div class="info-item">
               <div class="info-icon"><img src="images/mail.png" alt="" /></div>
               <div class="info-text">
-                <strong>Email Us</strong><br />
+                <strong>Email</strong><br />
                 BANYUTANIBERKARYA@GMAIL.COM
               </div>
             </div>
@@ -134,13 +134,13 @@
             <div class="info-item">
               <div class="info-icon"><img src="images/call.png" alt="" /></div>
               <div class="info-text">
-                <strong>Call Us</strong><br />
+                <strong>Telepon</strong><br />
                 +62 855-5555-9984
               </div>
             </div>
 
             <div class="contact-social">
-              <p>Follow Our Social Media</p>
+              <p>Social Media Kami</p>
               <div class="social-icons">
                 <a href="#"><img src="images/instabg.png" alt="" /></a>
                 <a href="#"><img src="images/tiktokbg.png" alt="" /></a>
@@ -150,7 +150,7 @@
           </div>
 
           <div class="contact-form">
-            <h2>Send Us a Message</h2>
+            <h2>Konsultasikan Kebutuhan Anda</h2>
             <form action="" id="whatsappForm" method="POST">
               <div class="form-row">
                 <div class="input-group">
@@ -172,7 +172,7 @@
                   <input type="email" name="email" id="email" required />
                 </div>
               </div>
-              <div class="input-group">
+              <!-- <div class="input-group">
                 <label>Subject</label>
                 <select name="subject" id="subject">
                   <option value="" disabled selected hidden></option>
@@ -180,7 +180,7 @@
                   <option value="Project">Project</option>
                   <option value="Inquiry">Inquiry</option>
                 </select>
-              </div>
+              </div> -->
               <div class="input-group">
                 <label>Message</label>
                 <textarea
@@ -268,18 +268,18 @@
           // Ambil data dari input
           const name = document.getElementById("name").value;
           const address = document.getElementById("address").value;
-          const subject = document.getElementById("subject").value;
+          // const subject = document.getElementById("subject").value;
           const message = document.getElementById("message").value;
 
           // Nomor WhatsApp tujuan (Ganti dengan nomor admin kamu, awali dengan 62)
-          const phoneNumber = "6287778273073";
+          const phoneNumber = "6285555559994";
 
           // Susun format pesan
           const text =
             `Halo Admin Banyu Tani,%0A%0A` +
             `Nama Saya ${name},%0A` +
             `Alamat Saya ${address}.%0A` +
-            `Saya Adalah Seorang ${subject}%0A` +
+            // `Saya Adalah Seorang ${subject}%0A` +
             `${message}`;
 
           // Arahkan ke link WhatsApp

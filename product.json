@@ -4,7 +4,7 @@
     "title": "Supatuf MK2 ECO 100 Pump",
     "description": "Equipped with a 3-speed energy-efficient motor, the Supatuf ECO 100 is able to reduce energy consumption and reduce operating noise levels.",
     "image": "images/product/Supatuf MK2 ECO 100.png",
-    "category": ["pool"],
+    "category": ["pool", "eco"],
     "market": ["residential"],
     "equipment": ["-"],
     "type": ["pumps"]
@@ -14,7 +14,7 @@
     "title": "Hydrostorm ECO-V 100 Pump",
     "description": "Energy-Saving Variable Speed Pump. The Hydrostorm ECO-V 100 pump reduces energy consumption and operating noise.",
     "image": "images/product/Hydrostorm ECO-V 100.png",
-    "category": ["pool"],
+    "category": ["pool", "eco"],
     "market": ["residential"],
     "equipment": ["-"],
     "type": ["pumps"]
@@ -24,7 +24,7 @@
     "title": "Hydrostorm ECO-V 150 Pump",
     "description": "Energy-Saving Variable Speed Pump.The Hydrostorm ECO-V 150 pump reduces energy consumption and operating noise.",
     "image": "images/product/Hydrostorm ECO-V 150.png",
-    "category": ["pool"],
+    "category": ["pool", "eco"],
     "market": ["residential"],
     "equipment": ["-"],
     "type": ["pumps"]
@@ -34,7 +34,7 @@
     "title": "Hydrostorm ECO-V 300 Pump",
     "description": "The Hydrostorm ECO-V 300 pump defines the ultimate in performance. The variable-speed pump offers speeds up to 3450 RPM.",
     "image": "images/product/Hydrostorm ECO-V 300.png",
-    "category": ["pool"],
+    "category": ["pool", "eco"],
     "market": ["residential"],
     "equipment": ["-"],
     "type": ["pumps"]
@@ -114,7 +114,7 @@
     "title": "Micron ECO Filter",
     "description": "Micron ECO Media Filters embody the latest fiberglass winding technology. Micron fiberglass vessels consist of an inner fiberglass shell reinforced...",
     "image": "images/product/Micron ECO Filter.png",
-    "category": ["pool"],
+    "category": ["pool", "eco"],
     "market": ["residential"],
     "equipment": ["-"],
     "type": ["filters"]
@@ -124,7 +124,7 @@
     "title": "MultiCyclone 12 & 16 Plus",
     "description": "The MultiCyclone 12 & 16 Ultra filters combine centrifugal and cartridge filtration into one streamlined housing, creating an ultra-compact...",
     "image": "images/product/MultiCyclone 12 & 16 Plus.png",
-    "category": ["pool"],
+    "category": ["pool", "eco"],
     "market": ["residential"],
     "equipment": ["-"],
     "type": ["filters"]
@@ -134,7 +134,7 @@
     "title": "MultiCyclone 16 Centrifugal Filter",
     "description": "The MultiCyclone 16 filter is a brilliant pre-filter device that works based on centrifugal water filtration and is designed with no moving...",
     "image": "images/product/MultiCyclone 16 Centrifugal Filter.png",
-    "category": ["pool"],
+    "category": ["pool", "water", "aqua", "eco"],
     "market": ["residential"],
     "equipment": ["-"],
     "type": ["filters"]
@@ -144,7 +144,7 @@
     "title": "MultiCyclone 12 Centrifugal Filter",
     "description": "The MultiCyclone 12 filter is a brilliant pre-filter device that works based on centrifugal water filtration and is designed with no moving parts and...",
     "image": "images/product/MultiCyclone 12 Centrifugal Filter.png",
-    "category": ["pool"],
+    "category": ["pool", "water", "aqua", "eco"],
     "market": ["residential"],
     "equipment": ["-"],
     "type": ["filters"]
@@ -174,7 +174,7 @@
     "title": "Trimline Cartridge Filters",
     "description": "Trimline Cartridge Filters are compact and economical filters designed to effectively filter suspended solids from your pool.",
     "image": "images/product/Trimline Cartridge Filters.png",
-    "category": ["pool"],
+    "category": ["pool", "water"],
     "market": ["residential"],
     "equipment": ["-"],
     "type": ["filters"]
@@ -184,7 +184,7 @@
     "title": "Hydrostar MKIV Commercial Pumps",
     "description": "The Hydrostar MKIV has been designed to provide significantly quieter operation with higher flow rates and higher heads than previous....",
     "image": "images/product/Hydrostar MKIV Commercial Pumps.png",
-    "category": ["pool"],
+    "category": ["pool", "aqua"],
     "market": ["commercial"],
     "equipment": ["-"],
     "type": ["pumps"]
@@ -194,7 +194,7 @@
     "title": "Hydrostar Plus Commercial Pumps",
     "description": "The Hydrostar Plus pump combines the latest design and construction technologies to produce a high-performance pump....",
     "image": "images/product/Hydrostar Plus Commercial Pumps.png",
-    "category": ["pool"],
+    "category": ["pool", "aqua"],
     "market": ["commercial"],
     "equipment": ["-"],
     "type": ["pumps"]
@@ -214,7 +214,7 @@
     "title": "Micron Horizontal Commercial Filters",
     "description": "Micron Horizontal Commercial Filters are manufactured from the highest grade non-corrosive materials and utilize the latest fiberglass...",
     "image": "images/product/Micron Horizontal Commercial Filters.png",
-    "category": ["pool"],
+    "category": ["pool", "water", "aqua"],
     "market": ["commercial"],
     "equipment": ["-"],
     "type": ["filters"]
@@ -224,7 +224,7 @@
     "title": "Micron Side Mount Nozzle Plate Deep Bed Series Filters",
     "description": "The Micron Side Mount Nozzle Plate Deep Bed (SPDD) series filters, featuring a lateral nozzle plate configuration, have a filter media depth of 1200 mm....",
     "image": "images/product/Micron Side Mount Nozzle Plate Deep Bed Series Filters.png",
-    "category": ["pool"],
+    "category": ["pool", "water"],
     "market": ["commercial"],
     "equipment": ["-"],
     "type": ["filters"]
@@ -234,7 +234,7 @@
     "title": "Micron Side Mount Deep Bed Filters",
     "description": "Micron Side Mount Deep Bed Filters are manufactured from the highest grade non-corrosive materials and using the latest fiberglass winding...",
     "image": "images/product/Micron Side Mount Deep Bed Filters.png",
-    "category": ["pool"],
+    "category": ["pool", "water", "aqua"],
     "market": ["commercial"],
     "equipment": ["-"],
     "type": ["filters"]
@@ -244,7 +244,7 @@
     "title": "Micron Side Mount Fibreglass Filters",
     "description": "Micron Side Mount Fiberglass Filters are manufactured from the highest grade non-corrosive materials and using the latest fiberglass winding...",
     "image": "images/product/Micron Side Mount Fibreglass Filters.png",
-    "category": ["pool"],
+    "category": ["pool", "water"],
     "market": ["commercial"],
     "equipment": ["-"],
     "type": ["filters"]
@@ -254,7 +254,7 @@
     "title": "Micron Top Mount Fibreglass Filters",
     "description": "Micron Top Mount Fiberglass Filters are manufactured from the highest grade non-corrosive materials and using the latest fiberglass winding...",
     "image": "images/product/Micron Top Mount Fibreglass Filters.png",
-    "category": ["pool"],
+    "category": ["pool", "water"],
     "market": ["commercial"],
     "equipment": ["-"],
     "type": ["filters"]
@@ -284,7 +284,7 @@
     "title": "Hydro5000 Commercial Strainer",
     "description": "The Hydro5000 Commercial strainer is a corrosion-resistant thermoplastic strainer designed for aquatic facilities, water parks, and large...",
     "image": "images/product/Hydro5000 Commercial Strainer.png",
-    "category": ["pool"],
+    "category": ["pool", "aqua"],
     "market": ["commercial"],
     "equipment": ["-"],
     "type": ["stainer"]
@@ -294,30 +294,30 @@
     "title": "Digiheat Titanium",
     "description": "Lie back and relax in your warm spa knowing that the Digiheat Titanium electric spa heater combines the latest technology, advanced...",
     "image": "images/product/Digiheat Titanium.png",
-    "category": ["pool"],
+    "category": ["pool", "aqua"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["heaters", "digiheat"]
+    "equipment": ["heaters"],
+    "type": ["digiheat"]
   },
   {
     "id": 31,
     "title": "Electroheat MKV Pool Heat Pump",
     "description": "There's growing interest in environmentally friendly and cost-effective pool heating. To meet demand, Waterco has expanded... ",
     "image": "images/product/Electroheat MKV Pool Heat Pump.png",
-    "category": ["pool"],
+    "category": ["pool", "aqua", "eco"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["heaters", "electroheat"]
+    "equipment": ["heaters"],
+    "type": ["electroheat"]
   },
   {
     "id": 32,
     "title": "Electroheat Plus Heat Pump",
     "description": "The latest advancement in swimming pool heating, the Electroheat Plus Heat Pump extracts latent heat from the surrounding air, intensifies...",
     "image": "images/product/Electroheat Plus Heat Pump.png",
-    "category": ["pool"],
+    "category": ["pool", "eco"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["heaters", "electroheat"]
+    "equipment": ["heaters"],
+    "type": ["electroheat"]
   },
   {
     "id": 33,
@@ -326,8 +326,8 @@
     "image": "images/product/Turbotemp Gas Pool Heating.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["heaters", "gas-heater"]
+    "equipment": ["heaters"],
+    "type": ["gas-heater"]
   },
   {
     "id": 34,
@@ -336,8 +336,8 @@
     "image": "images/product/Electrochlor Mineral Chlorinator.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["sanitization", "salt-water"]
+    "equipment": ["sanitization"],
+    "type": ["salt-water"]
   },
   {
     "id": 35,
@@ -346,18 +346,18 @@
     "image": "images/product/Hydrochlor MK3 Mineral Chlorinator.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["sanitization", "salt-water"]
+    "equipment": ["sanitization"],
+    "type": ["salt-water"]
   },
   {
     "id": 36,
     "title": "Solclear UV Steriliser",
-    "description": "FMulti-Purpose Ultra-Violet Water Disinfection. The Solclear UV sterilizer uses environmentally friendly ultraviolet technology for water disinfection...",
+    "description": "Multi-Purpose Ultra-Violet Water Disinfection. The Solclear UV sterilizer uses environmentally friendly ultraviolet technology for water disinfection...",
     "image": "images/product/Solclear UV Steriliser.png",
-    "category": ["pool"],
+    "category": ["pool", "aqua"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["sanitization", "uv"]
+    "equipment": ["sanitization"],
+    "type": ["uv"]
   },
   {
     "id": 37,
@@ -366,8 +366,8 @@
     "image": "images/product/ChemfloPlus Chemical Dosing System.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["sanitization", "automatic-chemical-dosers"]
+    "equipment": ["sanitization"],
+    "type": ["automatic-chemical-dosers"]
   },
   {
     "id": 38,
@@ -376,8 +376,8 @@
     "image": "images/product/Waterking Automatic Tablet feeders.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["sanitization", "waterking-chlorine"]
+    "equipment": ["sanitization"],
+    "type": ["waterking-chlorine"]
   },
   {
     "id": 39,
@@ -386,78 +386,78 @@
     "image": "images/product/Floating Tablet Dispenser.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["sanitization", "floating-dispenser"]
+    "equipment": ["sanitization"],
+    "type": ["floating-dispenser"]
   },
   {
     "id": 40,
     "title": "Airflo Spa Blower",
     "description": "Enjoy the soothing effects of powerful, refreshing bubbles in your spa, without the excessive noise of equipment. The Waterco spa blower's compact design allows it to be installed in smaller areas and tight corners.",
     "image": "images/product/Airflo Spa Blower.png",
-    "category": ["pool"],
+    "category": ["pool", "aqua"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["spa-acc"]
+    "equipment": ["spa-acc", "blower"],
+    "type": ["-"]
   },
   {
     "id": 41,
     "title": "Whisperair Blower",
     "description": "Enjoy the soothing effects of powerful, refreshing bubbles in your spa, without the excessive noise of equipment. The Waterco spa blower's compact...",
     "image": "images/product/Whisperair Blower.png",
-    "category": ["pool"],
+    "category": ["pool", "aqua"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["spa-acc"]
+    "equipment": ["spa-acc", "blower"],
+    "type": ["-"]
   },
   {
     "id": 42,
     "title": "Trident ECO",
     "description": "Specifically designed to conserve water, lower energy bills, and reduce chemical costs, the Trident ECO robotic pool cleaner is considered one...",
     "image": "images/product/Trident ECO.png",
-    "category": ["pool"],
+    "category": ["pool", "eco"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["robotic"]
+    "equipment": ["robotic"],
+    "type": ["-"]
   },
   {
     "id": 43,
     "title": "Glass Pearls Filter Media",
     "description": "Manufactured from 100% pure glass, Waterco Glass Pearls is a new generation filter media, capable of delivering water with superior clarity and...",
     "image": "images/product/Glass Pearls Filter Media.png",
-    "category": ["pool"],
+    "category": ["pool", "water"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["filter-medias"]
+    "equipment": ["filter-medias"],
+    "type": ["-"]
   },
   {
     "id": 44,
     "title": "Ecopure Glass Filter Media",
     "description": "Waterco glass filters are manufactured from recycled glass and are an environmentally friendly and viable alternative to sand...",
     "image": "images/product/Ecopure Glass Filter Media.png",
-    "category": ["pool"],
+    "category": ["pool", "water"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["filter-medias"]
+    "equipment": ["filter-medias"],
+    "type": ["-"]
   },
   {
     "id": 45,
     "title": "GAC-Plus Filter Media",
     "description": "GAC-Plus Granular Activated Carbon offers a wide range of applications in both residential and industrial water purification. Its porous structure...",
     "image": "images/product/GAC-Plus Filter Media.png",
-    "category": ["pool"],
+    "category": ["pool", "water"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["filter-medias"]
+    "equipment": ["filter-medias"],
+    "type": ["-"]
   },
   {
     "id": 46,
     "title": "ZeoPlus Filter Media",
     "description": "ZeoPlus is a naturally occurring mineral rock found in areas that have experienced volcanic activity. Its microstructure and ammonia-removing properties...",
     "image": "images/product/ZeoPlus Filter Media.png",
-    "category": ["pool"],
-    "market": ["-"],
-    "equipment": ["-"],
-    "type": ["filter-medias"]
+    "category": ["pool", "water"],
+    "market": ["commercial", "residential"],
+    "equipment": ["filter-medias"],
+    "type": ["-"]
   },
   {
     "id": 47,
@@ -465,9 +465,9 @@
     "description": "Silica sand and gravel are carefully selected from hard, uniformly graded silica material, free from minerals that could settle into the system.",
     "image": "images/product/Sand and Gravel Filter Media.png",
     "category": ["pool"],
-    "market": ["-"],
-    "equipment": ["-"],
-    "type": ["filter-medias"]
+    "market": ["commercial", "residential"],
+    "equipment": ["filter-medias"],
+    "type": ["-"]
   },
   {
     "id": 48,
@@ -476,8 +476,8 @@
     "image": "images/product/Instant Test Strips & Test Kits.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["water-quality"]
+    "equipment": ["water-quality"],
+    "type": ["-"]
   },
   {
     "id": 49,
@@ -486,8 +486,8 @@
     "image": "images/product/Eyeball Fittings Concrete Pools.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["recirculation", "circulation"]
+    "equipment": ["recirculation"],
+    "type": ["circulation"]
   },
   {
     "id": 50,
@@ -496,8 +496,8 @@
     "image": "images/product/Main Drains with Hydrostatic Valve.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["recirculation", "circulation"]
+    "equipment": ["recirculation"],
+    "type": ["circulation"]
   },
   {
     "id": 51,
@@ -506,8 +506,8 @@
     "image": "images/product/Suction Fittings Concrete.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["recirculation", "circulation"]
+    "equipment": ["recirculation"],
+    "type": ["circulation"]
   },
   {
     "id": 52,
@@ -516,8 +516,8 @@
     "image": "images/product/Ecoskim Pool Skimmer.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["recirculation", "Ecoskim"]
+    "equipment": ["recirculation"],
+    "type": ["Ecoskim"]
   },
   {
     "id": 53,
@@ -526,8 +526,8 @@
     "image": "images/product/SP5000 Pool Skimmers.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["recirculation", "pool-skimmer"]
+    "equipment": ["recirculation"],
+    "type": ["pool-skimmer"]
   },
   {
     "id": 54,
@@ -536,8 +536,8 @@
     "image": "images/product/Supa Skimmer Box.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["recirculation", "pool-skimmer"]
+    "equipment": ["recirculation"],
+    "type": ["pool-skimmer"]
   },
   {
     "id": 55,
@@ -546,8 +546,8 @@
     "image": "images/product/Swimjets Old Faithful.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["recirculation", "swimjets"]
+    "equipment": ["recirculation"],
+    "type": ["swimjets"]
   },
   {
     "id": 56,
@@ -556,8 +556,8 @@
     "image": "images/product/Automatic Water Leveller.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["recirculation", "water-leveller"]
+    "equipment": ["recirculation"],
+    "type": ["water-leveller"]
   },
   {
     "id": 57,
@@ -566,7 +566,57 @@
     "image": "images/product/ool Handover Equipment PRO.png",
     "category": ["pool"],
     "market": ["-"],
-    "equipment": ["-"],
+    "equipment": ["Handover"],
     "type": ["-"]
+  },
+  {
+    "id": 58,
+    "title": "Micron W & WD Series Filters",
+    "description": "Trimline Cartridge Filters are compact and economical filters designed to effectively filter suspended solids from your pool.",
+    "image": "images/product/Micron W & WD Series Filters.png",
+    "category": ["water"],
+    "market": ["residential"],
+    "equipment": ["-"],
+    "type": ["filters"]
+  },
+  {
+    "id": 59,
+    "title": "Trimline Bag Filters",
+    "description": "Trimline Bag Filters (TBF) offer an economical and easy-to-use alternative for liquid filtration applications with favorable operating cost advantages.",
+    "image": "images/product/Trimline Bag Filters.png",
+    "category": ["water"],
+    "market": ["commercial"],
+    "equipment": ["-"],
+    "type": ["filters"]
+  },
+  {
+    "id": 60,
+    "title": "Aquabiome",
+    "description": "Aquabiome is designed for fish ponds and garden ponds. It provides mechanical and biological filtration in a single container. Its ability...",
+    "image": "images/product/Aquabiome.png",
+    "category": ["aqua"],
+    "market": ["-"],
+    "equipment": ["-"],
+    "type": ["aquabiome"]
+  },
+  {
+    "id": 61,
+    "title": "ElectroChill Chiller",
+    "description": "ElectroChill is the solution for cooled water to cater the need for chilled water in aquatic animals.",
+    "image": "images/product/ElectroChill Chiller.png",
+    "category": ["aqua"],
+    "market": ["-"],
+    "equipment": ["-"],
+    "type": ["chiller"]
+  },
+  {
+    "id": 62,
+    "title": "Bio - Mec Bead Media",
+    "description": "Bio-Mec Bead Media provides excellent mechanical filtration, offers extensive biological filtration, and increases the effectiveness of both mechanical and biological filtration.",
+    "image": "images/product/Bio Mec Bead Media.png",
+    "category": ["aqua"],
+    "market": ["-"],
+    "equipment": ["-"],
+    "type": ["bio-mec"]
   }
 ]

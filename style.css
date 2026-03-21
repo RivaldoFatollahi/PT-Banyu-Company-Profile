@@ -159,6 +159,7 @@ body {
 .menu li a {
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .menu a {
@@ -1139,7 +1140,7 @@ body {
     to bottom,
     #00507294 0%,
     #00507294 70%,
-    rgba(0, 80, 114, 0.3) 90%,
+    /* rgba(0, 80, 114, 0.3) 95%, */
     #ffffff 100%
   );
 }
@@ -1770,10 +1771,22 @@ body {
 
 .services-grid {
   display: grid;
-  /* Desktop: Otomatis bikin kolom yang lebarnya minimal 250px */
-  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin-bottom: 50px;
+
+}
+
+.top-grid {
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.bottom-grid {
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  max-width: 900px;
+  margin: 0 auto;
+
 }
 
 /* CARD STYLE */
@@ -2623,11 +2636,26 @@ body {
     max-height: 150px;
   }
 
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* Basis 2 kolom */
+  .services-grid.top-grid, 
+  .services-grid.bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default 2 kolom */
+    gap: 15px; /* Jarak antar card lebih kecil di HP agar tidak sesak */
+    max-width: 100%;
+  }
+
+  .top-grid .service-card:first-child,
+  .service-card:last-child {
+    grid-column: span 2; 
+    /* Opsional: Jika ingin card pertama tetap proporsional (tidak terlalu lebar/gepeng) */
+    max-width: 100%; 
+  }
+
+  /* .services-grid {
+    grid-template-columns: repeat(2, 1fr); 
     gap: 15px;
     margin-bottom: 0;
-  }
+  } */
 
   /* Reset semua span desktop sebelumnya */
   .service-card {
