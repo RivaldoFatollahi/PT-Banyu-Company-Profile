@@ -396,8 +396,8 @@
     "image": "images/product/Airflo Spa Blower.png",
     "category": ["pool", "aqua"],
     "market": ["-"],
-    "equipment": ["spa-acc", "blower"],
-    "type": ["-"]
+    "equipment": ["spa-acc"],
+    "type": ["blower"]
   },
   {
     "id": 41,
@@ -406,8 +406,8 @@
     "image": "images/product/Whisperair Blower.png",
     "category": ["pool", "aqua"],
     "market": ["-"],
-    "equipment": ["spa-acc", "blower"],
-    "type": ["-"]
+    "equipment": ["spa-acc"],
+    "type": ["blower"]
   },
   {
     "id": 42,
@@ -616,7 +616,7 @@
     "image": "images/product/Bio Mec Bead Media.png",
     "category": ["aqua"],
     "market": ["-"],
-    "equipment": ["-"],
-    "type": ["bio-mec"]
+    "equipment": ["bio-mec"],
+    "type": ["-"]
   }
 ]

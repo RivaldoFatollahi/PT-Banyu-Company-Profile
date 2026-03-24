@@ -571,6 +571,102 @@
         checkbox.addEventListener("change", updateTags);
       });
 
+      function updateFilterAvailability() {
+        // 1. Dapatkan daftar semua checkbox
+        const allCheckboxes = document.querySelectorAll(
+          '.category-list input[type="checkbox"]',
+        );
+
+        // 2. Cek setiap checkbox satu per satu
+        allCheckboxes.forEach((checkbox) => {
+          const filterValue = checkbox.value;
+          const filterGroup = checkbox
+            .closest(".category-list")
+            .previousElementSibling.textContent.trim()
+            .toLowerCase();
+
+          // Simpan status asli checkbox (checked atau tidak)
+          const isChecked = checkbox.checked;
+
+          // Jika checkbox sedang dicentang, jangan di-disable (agar user bisa uncheck)
+          if (isChecked) {
+            checkbox.disabled = false;
+            checkbox.parentElement.style.opacity = "1";
+            checkbox.parentElement.style.cursor = "pointer";
+            return;
+          }
+
+          // 3. Logika Simulasi:
+          // "Kalau filter ini saya centang, apakah akan ada produk yang muncul?"
+          const wouldHaveProducts = allProducts.some((product) => {
+            // Cek apakah produk ini lolos filter yang SEDANG AKTIF SAAT INI
+            // (Gunakan logika filter yang sama dengan fungsi filterProducts kamu)
+
+            const matchesCategory =
+              getActiveFilters("category").length === 0 ||
+              getActiveFilters("category").some((v) =>
+                product.category.includes(v),
+              );
+            const matchesMarket =
+              getActiveFilters("market").length === 0 ||
+              getActiveFilters("market").some((v) =>
+                product.market.includes(v),
+              );
+            const matchesEquipment =
+              getActiveFilters("equipment").length === 0 ||
+              getActiveFilters("equipment").some((v) =>
+                product.equipment.includes(v),
+              );
+            const matchesType =
+              getActiveFilters("type").length === 0 ||
+              getActiveFilters("type").some((v) => product.type.includes(v));
+
+            const matchesCurrentFilter =
+              matchesCategory &&
+              matchesMarket &&
+              matchesEquipment &&
+              matchesType;
+
+            // Dan cek apakah produk ini juga punya nilai dari checkbox yang sedang kita tes ini
+            const hasThisValue =
+              product.category.includes(filterValue) ||
+              product.market.includes(filterValue) ||
+              product.equipment.includes(filterValue) ||
+              product.type.includes(filterValue);
+
+            return matchesCurrentFilter && hasThisValue;
+          });
+
+          // 4. Update UI berdasarkan hasil simulasi
+          if (wouldHaveProducts) {
+            checkbox.disabled = false;
+            checkbox.parentElement.style.opacity = "1";
+            checkbox.parentElement.style.pointerEvents = "auto";
+          } else {
+            checkbox.disabled = true;
+            checkbox.parentElement.style.opacity = "0.4"; // Bikin agak transparan
+            checkbox.parentElement.style.pointerEvents = "none"; // Tidak bisa diklik
+          }
+        });
+      }
+
+      // Helper function untuk ambil value checkbox yang aktif per grup
+      function getActiveFilters(groupName) {
+        // Sesuaikan selector ini dengan struktur HTML kamu
+        // Mencari h5 yang teksnya mengandung nama group, lalu ambil input di .category-list setelahnya
+        const headers = Array.from(
+          document.querySelectorAll(".category-title"),
+        );
+        const targetHeader = headers.find((h) =>
+          h.textContent.toLowerCase().includes(groupName.toLowerCase()),
+        );
+        if (!targetHeader) return [];
+
+        return Array.from(
+          targetHeader.nextElementSibling.querySelectorAll("input:checked"),
+        ).map((cb) => cb.value);
+      }
+
       function updateTags() {
         tagsContainer.innerHTML = ""; // Kosongkan dulu
 
@@ -605,6 +701,8 @@
 
         // Fungsi untuk filter produk (logika filter Anda bisa ditaruh di sini)
         filterProducts();
+
+        updateFilterAvailability();
       }
 
       // Fungsi hapus satu per satu lewat tag
