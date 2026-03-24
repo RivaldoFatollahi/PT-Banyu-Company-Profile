@@ -388,9 +388,7 @@
             </span>
           </div>
 
-          <p class="footer-desc">
-            Where Luxury Takes Shape
-          </p>
+          <p class="footer-desc">Where Luxury Takes Shape</p>
 
           <div class="footer-social">
             <img src="images/instabg.png" alt="" />
@@ -403,9 +401,10 @@
         <div class="footer-col">
           <h4>Kategori Produk</h4>
           <ul>
-            <li><a href="#">Pool & SPA</a></li>
-            <li><a href="#">Eco Product</a></li>
-            <li><a href="#">Aquaculture</a></li>
+            <li><a href="product.html?category=pool">Pool & SPA</a></li>
+            <li><a href="product.html?category=eco">Eco Product</a></li>
+            <li><a href="product.html?category=aqua">Aquaculture</a></li>
+            <li><a href="product.html?category=water">Water Treatment</a></li>
           </ul>
         </div>
 
@@ -429,6 +428,30 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      window.addEventListener("load", () => {
+        const categoryFromURL = getQueryParam("category");
+
+        if (categoryFromURL) {
+          const targetCheckbox = document.querySelector(
+            `.category-list input[value="${categoryFromURL}"]`,
+          );
+
+          if (targetCheckbox) {
+            targetCheckbox.checked = true;
+
+            // update UI & filter
+            updateTags();
+          }
+        }
+      });
+    </script>
 
     <script>
       const searchInput = document.getElementById("searchInput");
@@ -604,35 +627,61 @@
       }
 
       function filterProducts() {
-        currentPage = 1;
+        const searchQuery = searchInput.value.toLowerCase();
 
-        const searchValue = document
-          .getElementById("searchInput")
-          .value.toLowerCase();
-
-        const activeFilters = Array.from(checkboxes)
-          .filter((cb) => cb.checked)
-          .map((cb) => cb.value);
+        // 1. Ambil pilihan user per kategori
+        const selectedMarket = Array.from(
+          document.querySelectorAll(
+            ".product-filter h5:nth-of-type(2) + .category-list input:checked",
+          ),
+        ).map((cb) => cb.value);
+        const selectedEquipment = Array.from(
+          document.querySelectorAll(
+            ".product-filter h5:nth-of-type(3) + .category-list input:checked",
+          ),
+        ).map((cb) => cb.value);
+        const selectedCategory = Array.from(
+          document.querySelectorAll(
+            ".product-filter h5:nth-of-type(1) + .category-list input:checked",
+          ),
+        ).map((cb) => cb.value);
+        const selectedType = Array.from(
+          document.querySelectorAll(
+            ".product-filter h5:nth-of-type(4) + .category-list input:checked",
+          ),
+        ).map((cb) => cb.value);
 
         filteredProducts = allProducts.filter((product) => {
-          const productName = product.title.toLowerCase();
+          // A. Cek Search
+          const matchesSearch =
+            product.title.toLowerCase().includes(searchQuery) ||
+            product.description.toLowerCase().includes(searchQuery);
 
-          const allFilters = [
-            ...(product.category || []),
-            ...(product.market || []),
-            ...(product.equipment || []),
-            ...(product.type || []),
-          ];
+          // B. Logika Irisan (AND antar grup, OR di dalam grup)
+          const matchesCategory =
+            selectedCategory.length === 0 ||
+            selectedCategory.some((val) => product.category.includes(val));
+          const matchesMarket =
+            selectedMarket.length === 0 ||
+            selectedMarket.some((val) => product.market.includes(val));
+          const matchesEquipment =
+            selectedEquipment.length === 0 ||
+            selectedEquipment.some((val) => product.equipment.includes(val));
+          const matchesType =
+            selectedType.length === 0 ||
+            selectedType.some((val) => product.type.includes(val));
 
-          const matchesSearch = productName.includes(searchValue);
-
-          const matchesFilter =
-            activeFilters.length === 0 ||
-            activeFilters.some((f) => allFilters.includes(f));
-
-          return matchesSearch && matchesFilter;
+          // Produk harus lolos SEMUA kriteria grup yang aktif
+          return (
+            matchesSearch &&
+            matchesCategory &&
+            matchesMarket &&
+            matchesEquipment &&
+            matchesType
+          );
         });
 
+        currentPage = 1;
         displayProducts();
         setupPagination();
       }

@@ -464,7 +464,7 @@
     "title": "Sand and Gravel Filter Media",
     "description": "Silica sand and gravel are carefully selected from hard, uniformly graded silica material, free from minerals that could settle into the system.",
     "image": "images/product/Sand and Gravel Filter Media.png",
-    "category": ["pool"],
+    "category": ["pool", "water"],
     "market": ["commercial", "residential"],
     "equipment": ["filter-medias"],
     "type": ["-"]
