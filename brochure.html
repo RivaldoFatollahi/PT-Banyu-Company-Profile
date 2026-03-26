@@ -70,7 +70,7 @@
             <a href="project.html"> PROYEK </a>
           </li>
           <li>
-            <a href="#" class="active"> DOWNLOADS </a>
+            <a href="#" class="active"> UNDUH</a>
           </li>
           <li><a href="contact.html"> KONTAK</a></li>
         </ul>
@@ -173,33 +173,57 @@
         .then((response) => response.json())
         .then((data) => {
           data.forEach((item) => {
-            // Buat Judul Kategori
-            const title = document.createElement("h2");
-            title.className = "category-title";
-            title.innerText = item.kategori;
-            contentRender.appendChild(title);
+            // Hitung jumlah file
+            const fileCount = item.files.length;
 
-            // Buat List Card
-            item.files.forEach((file) => {
-              const downloadLink = `https://drive.google.com/uc?export=download&id=${file.id_drive}`;
-
-              const card = `
-                    <div class="download-card">
-                        <div class="file-info">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" class="pdf-icon" alt="PDF">
-                            <div class="text-details">
-                                <h3>${file.nama}</h3>
-                                <p>PDF | 1 file | ${file.ukuran}</p>
+            // Buat HTML Accordion
+            const accordionHtml = `
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="folder-info">
+                            <img src="images/files.png" class="folder-icon">
+                            <div class="folder-text">
+                                <h2>${item.kategori}</h2>
+                                <span><img src="images/page.png" width="10"> ${fileCount} File(s)</span>
                             </div>
                         </div>
-                        <a href="${downloadLink}" class="btn-download" target="_blank">Download</a>
+                        <img src="https://cdn-icons-png.flaticon.com/512/271/271210.png" class="arrow-icon">
                     </div>
-                `;
-              contentRender.innerHTML += card;
-            });
+                    <div class="accordion-content">
+                        ${item.files
+                          .map(
+                            (file) => `
+                            <div class="download-card">
+                                <div class="file-info">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" class="pdf-icon">
+                                    <div class="text-details">
+                                        <h3>${file.nama}</h3>
+                                        <p>PDF | 1 file | ${file.ukuran}</p>
+                                    </div>
+                                </div>
+                                <a href="https://drive.google.com/uc?export=download&id=${file.id_drive}" class="btn-download" target="_blank">Download</a>
+                            </div>
+                        `,
+                          )
+                          .join("")}
+                    </div>
+                </div>
+            `;
+            contentRender.innerHTML += accordionHtml;
           });
-        })
-        .catch((error) => console.error("Error:", error));
+
+          // Kasih event klik setelah semua elemen dirender
+          setupAccordion();
+        });
+
+      function setupAccordion() {
+        const headers = document.querySelectorAll(".accordion-header");
+        headers.forEach((header) => {
+          header.addEventListener("click", () => {
+            header.classList.toggle("active");
+          });
+        });
+      }
     </script>
 
     <script>
