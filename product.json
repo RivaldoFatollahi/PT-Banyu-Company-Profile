@@ -425,7 +425,7 @@
     "description": "Manufactured from 100% pure glass, Waterco Glass Pearls is a new generation filter media, capable of delivering water with superior clarity and...",
     "image": "images/product/Glass Pearls Filter Media.png",
     "category": ["pool", "water"],
-    "market": ["-"],
+    "market": ["commercial", "residential"],
     "equipment": ["filter-medias"],
     "type": ["-"]
   },
@@ -435,7 +435,7 @@
     "description": "Waterco glass filters are manufactured from recycled glass and are an environmentally friendly and viable alternative to sand...",
     "image": "images/product/Ecopure Glass Filter Media.png",
     "category": ["pool", "water"],
-    "market": ["-"],
+    "market": ["commercial", "residential"],
     "equipment": ["filter-medias"],
     "type": ["-"]
   },
@@ -445,7 +445,7 @@
     "description": "GAC-Plus Granular Activated Carbon offers a wide range of applications in both residential and industrial water purification. Its porous structure...",
     "image": "images/product/GAC-Plus Filter Media.png",
     "category": ["pool", "water"],
-    "market": ["-"],
+    "market": ["commercial", "residential"],
     "equipment": ["filter-medias"],
     "type": ["-"]
   },

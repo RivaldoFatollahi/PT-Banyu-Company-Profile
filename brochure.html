@@ -43,6 +43,11 @@
     <nav class="navbar" id="navbar">
       <div class="container nav-content">
         <!-- LEFT -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="logo">
           <img src="images/LogoPT.png" alt="Logo" class="logo-img" />
           <span class="logo-text"
@@ -56,18 +61,18 @@
           <li><a href="index.html">BERANDA</a></li>
           <li><a href="about.html">TENTANG KAMI</a></li>
           <li>
-            <a href="product.html">PRODUK </a>
+            <a href="product.html"> PRODUK </a>
           </li>
           <li>
-            <a href="service.html">LAYANAN</a>
+            <a href="service.html"> LAYANAN </a>
           </li>
           <li>
-            <a href="#" class="active">PROYEK </a>
+            <a href="project.html"> PROYEK </a>
           </li>
           <li>
-            <a href="brochure.html"> DOWNLOADS </a>
+            <a href="#" class="active"> DOWNLOADS </a>
           </li>
-          <li><a href="contact.html">KONTAK</a></li>
+          <li><a href="contact.html"> KONTAK</a></li>
         </ul>
 
         <!-- RIGHT -->
@@ -85,93 +90,27 @@
             <span class="profile-role">Kontak Admin</span>
           </div>
         </div>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </div>
     </nav>
 
     <!-- HERO -->
-    <section class="service-hero">
+    <section class="contact-hero">
       <div class="hero-overlay"></div>
 
       <div class="container hero-content reveal">
         <img src="images/LogoPT.png" class="hero-logo" alt="" />
         <div class="hero-text">
-          <h1>PROYEK KAMI</h1>
+          <h1>UNDUH BROSUR & KATALOG KAMI</h1>
           <p>
-            Jelajahi berbagai proyek yang telah kami kerjakan, mulai dari kolam
-            renang, koi pond, hingga water feature dengan hasil yang
-            mengutamakan kualitas dan detail.
+            Unduh brosur kami untuk melihat informasi lengkap mengenai produk
+            dan solusi terbaik yang kami tawarkan.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="gallery reveal">
-      <div class="container">
-        <div class="gallery-grid">
-          <!-- CARD -->
-          <div class="gallery-card">
-            <div class="gallery-image">
-              <img src="images/about1.png" alt="" />
-            </div>
-            <div class="gallery-caption">NAMA KEGIATAN</div>
-          </div>
-          <div class="gallery-card">
-            <div class="gallery-image">
-              <img src="images/about1.png" alt="" />
-            </div>
-            <div class="gallery-caption">NAMA KEGIATAN</div>
-          </div>
-          <div class="gallery-card">
-            <div class="gallery-image">
-              <img src="images/about1.png" alt="" />
-            </div>
-            <div class="gallery-caption">NAMA KEGIATAN</div>
-          </div>
-          <div class="gallery-card">
-            <div class="gallery-image">
-              <img src="images/about1.png" alt="" />
-            </div>
-            <div class="gallery-caption">NAMA KEGIATAN</div>
-          </div>
-          <div class="gallery-card">
-            <div class="gallery-image">
-              <img src="images/about1.png" alt="" />
-            </div>
-            <div class="gallery-caption">NAMA KEGIATAN</div>
-          </div>
-          <div class="gallery-card">
-            <div class="gallery-image">
-              <img src="images/about1.png" alt="" />
-            </div>
-            <div class="gallery-caption">NAMA KEGIATAN</div>
-          </div>
-          <div class="gallery-card">
-            <div class="gallery-image">
-              <img src="images/about1.png" alt="" />
-            </div>
-            <div class="gallery-caption">NAMA KEGIATAN</div>
-          </div>
-          <div class="gallery-card">
-            <div class="gallery-image">
-              <img src="images/about1.png" alt="" />
-            </div>
-            <div class="gallery-caption">NAMA KEGIATAN</div>
-          </div>
-          <div class="gallery-card">
-            <div class="gallery-image">
-              <img src="images/about1.png" alt="" />
-            </div>
-            <div class="gallery-caption">NAMA KEGIATAN</div>
-          </div>
-
-          <!-- copy card ini aja sampe 9 -->
-        </div>
-      </div>
+    <section class="downloads">
+      <div id="content-render"></div>
     </section>
 
     <footer class="footer">
@@ -186,9 +125,7 @@
             </span>
           </div>
 
-          <p class="footer-desc">
-            Where Luxury Takes Shape
-          </p>
+          <p class="footer-desc">Where Luxury Takes Shape</p>
 
           <div class="footer-social">
             <img src="images/instabg.png" alt="" />
@@ -228,6 +165,42 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const contentRender = document.getElementById("content-render");
+
+      fetch("brosur.json")
+        .then((response) => response.json())
+        .then((data) => {
+          data.forEach((item) => {
+            // Buat Judul Kategori
+            const title = document.createElement("h2");
+            title.className = "category-title";
+            title.innerText = item.kategori;
+            contentRender.appendChild(title);
+
+            // Buat List Card
+            item.files.forEach((file) => {
+              const downloadLink = `https://drive.google.com/uc?export=download&id=${file.id_drive}`;
+
+              const card = `
+                    <div class="download-card">
+                        <div class="file-info">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" class="pdf-icon" alt="PDF">
+                            <div class="text-details">
+                                <h3>${file.nama}</h3>
+                                <p>PDF | 1 file | ${file.ukuran}</p>
+                            </div>
+                        </div>
+                        <a href="${downloadLink}" class="btn-download" target="_blank">Download</a>
+                    </div>
+                `;
+              contentRender.innerHTML += card;
+            });
+          });
+        })
+        .catch((error) => console.error("Error:", error));
+    </script>
 
     <script>
       const hamburger = document.getElementById("hamburger");

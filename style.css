@@ -239,11 +239,11 @@ body {
 
 /* Saat scroll */
 .navbar.scrolled .nav-content {
-  color: #002C3F;
+  color: #002c3f;
 }
 
 .navbar.scrolled .menu a {
-  color: #002C3F;
+  color: #002c3f;
 }
 
 .navbar.scrolled .menu a.active {
@@ -253,11 +253,11 @@ body {
 
 .navbar.scrolled .profile-number,
 .navbar.scrolled .profile-role {
-  color: #002C3F;
+  color: #002c3f;
 }
 
 .navbar.scrolled .logo {
-  color: #002C3F;
+  color: #002c3f;
 }
 
 .navbar.scrolled .profile-light {
@@ -288,20 +288,20 @@ body {
 
 /* Warna hamburger saat navbar putih (scrolled) */
 .navbar.scrolled .hamburger span {
-  background: #002C3F;
+  background: #002c3f;
 }
 
 /* Animasi Hamburger jadi 'X' saat aktif */
 .hamburger.active span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
-  background: #002C3F;
+  background: #002c3f;
 }
 .hamburger.active span:nth-child(2) {
   opacity: 0;
 }
 .hamburger.active span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-  background: #002C3F;
+  background: #002c3f;
 }
 
 /* HERO */
@@ -309,7 +309,7 @@ body {
   position: relative;
   height: 100vh;
   background: url("images/daanMogot.jpeg");
-  background-size: cover;      /* Pastikan gambar nutupin seluruh area tanpa penyok */
+  background-size: cover; /* Pastikan gambar nutupin seluruh area tanpa penyok */
   background-position: center; /* Pastikan tengah gambar selalu kelihatan */
   background-repeat: no-repeat; /* Jangan sampai gambarnya ngulang (tile) */
   background-attachment: fixed;
@@ -328,12 +328,13 @@ body {
   position: absolute;
   inset: 0;
   /* Gradasi dari gelap di atas ke transparan di tengah, lalu biru air di bawah */
-    background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     #002c3f7c 0%,
     #002c3f7c 90%,
     #ffffff 100%
-  );
+  ); */
+  background: #002c3f75;
   z-index: 1;
 }
 
@@ -417,7 +418,7 @@ body {
 }
 
 .card-item h4 {
-  color: #002C3F;
+  color: #002c3f;
   margin: 15px 0;
   font-size: 16px;
   font-weight: 600;
@@ -449,11 +450,11 @@ body {
 .about-header .line {
   width: 100px;
   height: 2px;
-  background: #002C3F;
+  background: #002c3f;
 }
 
 .about-header span {
-  color: #002C3F;
+  color: #002c3f;
   font-size: 30px;
   font-weight: 300;
 }
@@ -463,7 +464,7 @@ body {
   margin-bottom: 60px;
   font-weight: 600;
   margin-top: 10px;
-  color: #002C3F;
+  color: #002c3f;
 }
 
 .about-content {
@@ -495,7 +496,7 @@ body {
   flex: 0 0 60%;
   font-size: 14px;
   line-height: 1.8;
-  color: #002C3F;
+  color: #002c3f;
   text-align: left;
 }
 
@@ -513,7 +514,7 @@ body {
   position: relative;
   padding: 120px 0;
   background: url("images/tangkiFRP.jpeg");
-  background-size: cover;      /* Pastikan gambar nutupin seluruh area tanpa penyok */
+  background-size: cover; /* Pastikan gambar nutupin seluruh area tanpa penyok */
   background-position: center; /* Pastikan tengah gambar selalu kelihatan */
   background-repeat: no-repeat; /* Jangan sampai gambarnya ngulang (tile) */
   background-attachment: fixed;
@@ -772,7 +773,7 @@ body {
   background:
     linear-gradient(rgba(24, 42, 44, 0.4), rgba(24, 42, 44, 0.4)),
     url("images/daanMogot.jpeg");
-  background-size: cover;      /* Pastikan gambar nutupin seluruh area tanpa penyok */
+  background-size: cover; /* Pastikan gambar nutupin seluruh area tanpa penyok */
   background-position: center; /* Pastikan tengah gambar selalu kelihatan */
   background-repeat: no-repeat; /* Jangan sampai gambarnya ngulang (tile) */
   background-attachment: fixed;
@@ -820,13 +821,13 @@ body {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #002C3F;
+  color: #002c3f;
   position: relative;
 }
 
 .detail-item p {
   font-size: 16px;
-  color: #002C3F;
+  color: #002c3f;
   line-height: 1.8;
   text-align: left; /* Biar rapi kayak di foto */
 }
@@ -1121,7 +1122,7 @@ body {
   position: relative;
   height: 100vh;
   background: url("images/HeroBG.png");
-  background-size: cover;      /* Pastikan gambar nutupin seluruh area tanpa penyok */
+  background-size: cover; /* Pastikan gambar nutupin seluruh area tanpa penyok */
   background-position: center; /* Pastikan tengah gambar selalu kelihatan */
   background-repeat: no-repeat; /* Jangan sampai gambarnya ngulang (tile) */
   background-attachment: fixed;
@@ -1536,7 +1537,7 @@ body {
   position: relative;
   height: 100vh;
   background: url("images/HeroBG.png");
-  background-size: cover;      /* Pastikan gambar nutupin seluruh area tanpa penyok */
+  background-size: cover; /* Pastikan gambar nutupin seluruh area tanpa penyok */
   background-position: center; /* Pastikan tengah gambar selalu kelihatan */
   background-repeat: no-repeat; /* Jangan sampai gambarnya ngulang (tile) */
   background-attachment: fixed;
@@ -1740,7 +1741,7 @@ body {
   position: relative;
   height: 100vh;
   background: url("images/HeroBG.png");
-  background-size: cover;      /* Pastikan gambar nutupin seluruh area tanpa penyok */
+  background-size: cover; /* Pastikan gambar nutupin seluruh area tanpa penyok */
   background-position: center; /* Pastikan tengah gambar selalu kelihatan */
   background-repeat: no-repeat; /* Jangan sampai gambarnya ngulang (tile) */
   background-attachment: fixed;
@@ -1773,7 +1774,6 @@ body {
   display: grid;
   gap: 30px;
   margin-bottom: 50px;
-
 }
 
 .top-grid {
@@ -1786,7 +1786,6 @@ body {
   grid-template-columns: repeat(3, 1fr); /* 3 kolom */
   max-width: 900px;
   margin: 0 auto;
-
 }
 
 /* CARD STYLE */
@@ -1876,7 +1875,7 @@ body {
 .testimonial-section {
   padding: 100px 0;
   background: url("images/HeroBG.png");
-  background-size: cover;      /* Pastikan gambar nutupin seluruh area tanpa penyok */
+  background-size: cover; /* Pastikan gambar nutupin seluruh area tanpa penyok */
   background-position: center; /* Pastikan tengah gambar selalu kelihatan */
   background-repeat: no-repeat; /* Jangan sampai gambarnya ngulang (tile) */
   background-attachment: fixed;
@@ -2018,6 +2017,67 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.downloads {
+  max-width: 1220px;
+  margin: 50px auto;
+}
+
+.category-title {
+  color: #4a6a8a;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.download-card {
+  background: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+}
+
+.pdf-icon {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.text-details h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.text-details p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #888;
+}
+
+.btn-download {
+  background-color: #0091ff;
+  color: white;
+  text-decoration: none;
+  padding: 8px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn-download:hover {
+  background-color: #0076d1;
 }
 
 /* FOOTER */
@@ -2220,6 +2280,11 @@ body {
   .home-product-grid .home-product-card:last-child {
     grid-column: span 2;
   }
+
+  .downloads {
+    max-width: 900px;
+    margin: 50px auto;
+  }
 }
 
 /* ===============================
@@ -2329,6 +2394,11 @@ body {
   .footer-col h4 {
     margin-top: 0;
   }
+
+  .downloads {
+    max-width: 700px;
+    margin: 50px auto;
+  }
 }
 
 /* ===============================
@@ -2375,7 +2445,7 @@ body {
   }
 
   .menu a {
-    color: #002C3F;
+    color: #002c3f;
     font-size: 16px;
   }
 
@@ -2417,7 +2487,7 @@ body {
     font-weight: 500;
   }
 
-  .about-header .line{
+  .about-header .line {
     width: 60px;
   }
 
@@ -2430,7 +2500,7 @@ body {
     font-size: 30px;
   }
 
-  .about-image img{
+  .about-image img {
     max-width: 40%;
   }
 
@@ -2478,7 +2548,7 @@ body {
     padding: 50px 0;
   }
 
-  .product-button{
+  .product-button {
     margin-top: 30px;
   }
 
@@ -2636,7 +2706,7 @@ body {
     max-height: 150px;
   }
 
-  .services-grid.top-grid, 
+  .services-grid.top-grid,
   .services-grid.bottom-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Default 2 kolom */
@@ -2646,16 +2716,15 @@ body {
 
   .top-grid .service-card:first-child,
   .service-card:last-child {
-    grid-column: span 2; 
+    grid-column: span 2;
     /* Opsional: Jika ingin card pertama tetap proporsional (tidak terlalu lebar/gepeng) */
-    max-width: 100%; 
+    max-width: 100%;
   }
 
-  /* .services-grid {
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 15px;
-    margin-bottom: 0;
-  } */
+  .downloads {
+    max-width: 630px;
+    margin: 50px auto;
+  }
 
   /* Reset semua span desktop sebelumnya */
   .service-card {
@@ -2724,7 +2793,7 @@ body {
     font-size: 20px;
   }
 
-  .home-product-card h3{
+  .home-product-card h3 {
     font-size: 15px;
   }
 
@@ -2764,5 +2833,31 @@ body {
 
   .detail-item p {
     font-size: 15px;
+  }
+
+  .downloads {
+    max-width: 300px;
+    margin: 50px auto;
+  }
+
+  .category-title{
+    font-size: 18px;
+  }
+
+  .text-details h3{
+    font-size: 10px;
+  }
+
+  .text-details p{
+    font-size: 8px;
+  }
+
+  .btn-download {
+    font-size: 10px;
+    padding: 5px 15px;
+  }
+
+  .download-card{
+    gap: 10px;
   }
 }
