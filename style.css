@@ -344,13 +344,13 @@ body {
   position: absolute;
   inset: 0;
   /* Gradasi dari gelap di atas ke transparan di tengah, lalu biru air di bawah */
-  /* background: linear-gradient(
+  background: linear-gradient(
     to bottom,
     #002c3f7c 0%,
     #002c3f7c 90%,
     #ffffff 100%
-  ); */
-  background: #002c3f75;
+  );
+  /* background: #002c3f75; */
   z-index: 1;
 }
 
@@ -529,7 +529,7 @@ body {
 .keunggulan {
   position: relative;
   padding: 120px 0;
-  background: url("images/tangkiFRP.jpeg");
+  background: url("images/ultrafiltrasi.jpeg");
   background-size: cover; /* Pastikan gambar nutupin seluruh area tanpa penyok */
   background-position: center; /* Pastikan tengah gambar selalu kelihatan */
   background-repeat: no-repeat; /* Jangan sampai gambarnya ngulang (tile) */
@@ -598,8 +598,8 @@ body {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    #002c3fa4 0%,
-    #002c3fa4 90%,
+    #36b5eb36 0%,
+    #36b5eb36 90%,
     #ffffff 100%
   );
 }
@@ -787,8 +787,13 @@ body {
   display: flex;
   flex-direction: column;
   background:
-    linear-gradient(rgba(24, 42, 44, 0.4), rgba(24, 42, 44, 0.4)),
-    url("images/daanMogot.jpeg");
+    linear-gradient(
+    to bottom, /* Kita bikin gelap dari atas ke bawah */
+      rgba(0, 0, 0, 0.7) 0%,    /* Gelap di atas (70% hitam) */
+      rgba(54, 181, 235, 0.4) 50%, /* Biru transparan di tengah */
+      rgba(54, 181, 235, 0.4) 80%   /* Gelap lagi di bawah */
+    ),
+    url("images/tangkiFRP.jpeg");
   background-size: cover; /* Pastikan gambar nutupin seluruh area tanpa penyok */
   background-position: center; /* Pastikan tengah gambar selalu kelihatan */
   background-repeat: no-repeat; /* Jangan sampai gambarnya ngulang (tile) */
@@ -800,6 +805,7 @@ body {
   color: white;
   height: 400px;
 }
+
 
 .perjalanan-content {
   max-width: 800px;
@@ -1095,8 +1101,7 @@ body {
   background: white;
 
   box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.04),
-    0 10px 20px rgba(0, 0, 0, 0.06);
+    0px 0px 9px 1px rgba(0, 0, 0, 0.37);
 
   transition:
     transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1124,7 +1129,7 @@ body {
 }
 
 .gallery-caption {
-  background: #d9d9d9;
+  background: #ffffff;
   padding: 12px;
   font-size: 13px;
   font-weight: 500;
