@@ -138,6 +138,14 @@ body {
   transition: all 0.3s ease;
 }
 
+/* .Logo-dark{
+  display: none;
+}
+
+.Logo-light {
+  display: block;
+} */
+
 /* logo text */
 .logo-text {
   white-space: nowrap;
@@ -267,6 +275,14 @@ body {
 .navbar.scrolled .profile-dark {
   display: block;
 }
+
+/* .navbar.scrolled .Logo-light {
+  display: none;
+}
+
+.navbar.scrolled .Logo-dark {
+  display: block;
+} */
 
 /* HAMBURGER STYLING */
 .hamburger {
@@ -2019,6 +2035,7 @@ body {
   border-radius: 50%;
 }
 
+/* SECTION UNDUH */
 .downloads {
   max-width: 1220px;
   margin: 50px auto;
