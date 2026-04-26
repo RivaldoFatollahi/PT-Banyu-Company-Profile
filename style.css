@@ -1101,8 +1101,11 @@ body {
 /* GRID */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
+  max-width: 1200px; /* Batasi lebar maksimal agar tidak terlalu melar di monitor lebar */
+  margin: 0 auto;    /* Posisikan grid di tengah halaman */
+  padding: 50px;
 }
 
 /* CARD */
@@ -1567,7 +1570,7 @@ body {
 .contact-hero {
   position: relative;
   height: 100vh;
-  background: url("images/HeroBG.png");
+  background: url("images/puriCikeas.jpeg");
   background-size: cover; /* Pastikan gambar nutupin seluruh area tanpa penyok */
   background-position: center; /* Pastikan tengah gambar selalu kelihatan */
   background-repeat: no-repeat; /* Jangan sampai gambarnya ngulang (tile) */
@@ -1905,7 +1908,7 @@ body {
 ========================= */
 .testimonial-section {
   padding: 100px 0;
-  background: url("images/HeroBG.png");
+  background: url("images/FRPTank.jpeg");
   background-size: cover; /* Pastikan gambar nutupin seluruh area tanpa penyok */
   background-position: center; /* Pastikan tengah gambar selalu kelihatan */
   background-repeat: no-repeat; /* Jangan sampai gambarnya ngulang (tile) */
@@ -1939,7 +1942,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 80, 114, 0.7); /* Biru gelap transparan */
+  background: #36b5eb28;
   z-index: 1;
 }
 
@@ -2852,6 +2855,7 @@ body {
     align-items: center;
     gap: 25px;
     width: 100%;
+    padding: 0;
   }
 
   .gallery-card {
