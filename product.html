@@ -839,25 +839,5 @@
       });
     </script>
 
-    <script>
-      const track = document.querySelector(".testimonial-track");
-      const leftBtn = document.querySelector(".arrow.left");
-      const rightBtn = document.querySelector(".arrow.right");
-
-      let currentIndex = 0;
-      const cardWidth = 325; // kira-kira lebar card + gap
-
-      rightBtn.addEventListener("click", () => {
-        currentIndex++;
-        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-      });
-
-      leftBtn.addEventListener("click", () => {
-        if (currentIndex > 0) {
-          currentIndex--;
-          track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-        }
-      });
-    </script>
   </body>
 </html>
